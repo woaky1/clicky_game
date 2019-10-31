@@ -3,7 +3,7 @@ import GamePic from "./GamePic";
 
 function GameBoard () {
     return(
-        <div>
+        <div className="row">
             <div className="col-md-3"></div>
             <div className="col-md-6">
                 <row>
