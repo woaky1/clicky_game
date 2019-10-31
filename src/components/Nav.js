@@ -1,4 +1,5 @@
 import React from 'react';
+import Jumbo from './Jumbo';
 
 
 function Nav() {
@@ -15,8 +16,9 @@ function Nav() {
                     <h1>Score: 0 | Top Score: 0</h1>
                 </div>
             </div>
+            <Jumbo />
         </div>
-    )
+    );
 }
 
 export default Nav;
