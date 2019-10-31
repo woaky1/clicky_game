@@ -1,4 +1,5 @@
 import React from 'react';
+import GameBoard from "./GameBoard";
 
 function Jumbo() {
     return (
@@ -11,7 +12,9 @@ function Jumbo() {
                     </div>
                 </div>
             </div>
+            <GameBoard />
         </div>
+
     )
 }
 
