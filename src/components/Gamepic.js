@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Gamepic () {
+function Gamepic (props) {
     return (
-        <div className="card" style={{width: "18rem;"}}>
-            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" className="card-img-top" alt="Pikachu" />
+        <div className="card" style={{width: "18rem"}}>
+            <img src={props.img} className="card-img-top" alt={props.name} />
         </div>
     )
 }

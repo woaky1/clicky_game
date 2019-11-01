@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Pikachu",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+    },
+    {
+        "name": "Bulbasaur",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+    },
+    {
+        "name": "Squirtle",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+    },
+    {
+        "name": "Charmander",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+    }
+]
