@@ -6,10 +6,17 @@ import Gameboard from './Gameboard';
 function Skeleton() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid">
                 <Navbar />
                 <Jumbo />
                 <Gameboard />
+                <div className="row fluid" style={{backgroundColor: "red"}}>
+                    <div className="col-md-12">
+                        <br />
+                        <br />
+                        <p>Clicky Game</p>
+                    </div>
+                </div>
             </div>
         </div>
 
