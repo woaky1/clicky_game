@@ -1,9 +1,11 @@
 import React from 'react';
 
-function Gamepic (props) {
+function Gamepic(props) {
     return (
-        <div className="card" style={{width: "18rem"}}>
-            <img src={props.img} className="card-img-top" alt={props.name} />
+        <div className="col-md-3">
+            <div className="card" >
+                <img src={props.img} className="card-img-top" alt={props.name} />
+            </div>
         </div>
     )
 }
