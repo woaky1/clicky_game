@@ -1,20 +1,15 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Jumbo from './Jumbo';
+import Gameboard from './Gameboard';
 
-function Skeleton () {
+function Skeleton() {
     return (
         <div>
-            {/* <div className="row"> */}
-
-            {/* </div> */}
             <div className="container">
                 <Navbar />
-                <div className="row">
-                    <div className="col-md-12">
-                        <Jumbo />
-                    </div>
-                </div>
+                <Jumbo />
+                <Gameboard />
             </div>
         </div>
 
