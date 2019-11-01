@@ -1,12 +1,10 @@
 import React from 'react';
-import Nav from './components/Nav';
+import Skeleton from './components/Skeleton';
 import './App.css';
 
 function App() {
   return (
-    <div className="container">
-      <Nav />
-    </div>
+    <Skeleton />
   );
 }
 

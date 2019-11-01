@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Pikachu",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+    },
+    {
+        "name": "Bulbasaur",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+    },
+    {
+        "name": "Squirtle",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+    },
+    {
+        "name": "Charmander",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+    },
+    {
+        "name": "Caterpie",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png"
+    },
+    {
+        "name": "Vulpix",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png"
+    },
+    {
+        "name": "Pidgey",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+    },
+    {
+        "name": "Rattata",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png"
+    },
+    {
+        "name": "Spearow",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png"
+    },
+    {
+        "name": "Ekans",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png"
+    },
+    {
+        "name": "Sandshrew",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png"
+    },
+    {
+        "name": "Clefairy",
+        "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png"
+    }
+]
