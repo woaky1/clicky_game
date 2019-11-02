@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Jumbo from './Jumbo';
 import Gameboard from './Gameboard';
+import pokedex from '../pokedex.json';
 
 
 class Skeleton extends React.Component {
@@ -9,7 +10,8 @@ class Skeleton extends React.Component {
     state = {
         score: 0,
         topScore: 0,
-        guessedPokemon: []
+        guessedPokemon: [],
+        pokedex: pokedex
     };
 
     pokeClick = event => {
@@ -18,27 +20,40 @@ class Skeleton extends React.Component {
                 score: 0,
                 guessedPokemon: []
             });
+            this.shuffle();
         } else {
             this.state.guessedPokemon.push(event.target.alt);
             let newScore = this.state.score + 1;
             if (newScore > this.state.topScore) {
-                this.setState({ 
+                this.setState({
                     score: newScore,
                     topScore: newScore
-                 })
+                })
             } else {
                 this.setState({ score: newScore })
             };
+            this.shuffle();
         };
     }
 
+    shuffle = () => {
+        // Shuffling my pictures with a Fisher-Yates algorithm I learned here: https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb
+        for (let i = pokedex.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * i)
+            const temp = pokedex[i]
+            pokedex[i] = pokedex[j]
+            pokedex[j] = temp
+        }
+    }
+
     render() {
+        this.shuffle();
         return (
             <div>
                 <div className="container-fluid">
                     <Navbar score={this.state.score} topScore={this.state.topScore} />
                     <Jumbo />
-                    <Gameboard pokeClick={this.pokeClick} />
+                    <Gameboard pokeClick={this.pokeClick} pokedex={this.state.pokedex}/>
                     <div className="row fluid" style={{ backgroundColor: "red" }}>
                         <div className="col-md-12">
                             <br />
