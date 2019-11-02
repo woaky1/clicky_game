@@ -13,7 +13,16 @@ class Skeleton extends React.Component {
     };
 
     pokeClick = event => {
-        console.log(event.target.alt)
+        if (this.state.guessedPokemon.includes(event.target.alt)) {
+            this.setState({
+                score: 0,
+                guessedPokemon: []
+            })
+        } else {
+            this.state.guessedPokemon.push(event.target.alt)
+            console.log(this.state.guessedPokemon);
+            
+        }
     }
 
     render() {
