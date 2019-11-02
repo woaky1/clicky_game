@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Navbar() {
+function Navbar(props) {
     return (
-            <div className="row">
+            <div className="row fixed-top" style={{backgroundColor: "red"}}>
                 <div className="col-md-4">
                     <h3 className="font-weight-bold">Clicky Game</h3>
                 </div>
@@ -10,7 +10,7 @@ function Navbar() {
                     <h3>Click an image to begin!</h3>
                 </div>
                 <div className="col-md-4">
-                    <h3>Score: 0 | Top Score: 0</h3>
+                    <h3>Score: {props.score} | Top Score: {props.topScore}</h3>
                 </div>
              </div>
 
