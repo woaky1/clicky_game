@@ -12,7 +12,7 @@ import Gamepic from './Gamepic';
 
 function Gameboard(props) {
     return (
-        <div>
+        <div className="justify-content-center">
             <div className="row">
                     <Gamepic name={props.pokedex[0].name} img={props.pokedex[0].img} pokeClick={props.pokeClick}/>
                     <Gamepic name={props.pokedex[1].name} img={props.pokedex[1].img} pokeClick={props.pokeClick}/>
