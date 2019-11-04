@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar(props) {
     return (
-            <div className="row fixed-top d-flex justify-content-center text-center" style={{backgroundColor: "red", fontFamily: "'Luckiest Guy', cursive"}}>
+            <div className="row sticky-top d-flex justify-content-center text-center poketext" style={{backgroundColor: "red", fontFamily: "'Luckiest Guy', cursive"}}>
                 <div className="col-md-4">
                     <h4 className="font-weight-bold">Clicky Game</h4>
                 </div>
