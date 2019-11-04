@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Jumbo from './Jumbo';
 import Gameboard from './Gameboard';
 import pokedex from '../pokedex.json';
+import Footer from './Footer';
 
 
 class Skeleton extends React.Component {
@@ -20,7 +21,6 @@ class Skeleton extends React.Component {
                 score: 0,
                 guessedPokemon: []
             });
-            this.shuffle();
         } else {
             this.state.guessedPokemon.push(event.target.alt);
             let newScore = this.state.score + 1;
@@ -32,7 +32,6 @@ class Skeleton extends React.Component {
             } else {
                 this.setState({ score: newScore })
             };
-            this.shuffle();
         };
     }
 
@@ -54,13 +53,7 @@ class Skeleton extends React.Component {
                     <Navbar score={this.state.score} topScore={this.state.topScore} />
                     <Jumbo />
                     <Gameboard pokeClick={this.pokeClick} pokedex={this.state.pokedex}/>
-                    <div className="row fluid" style={{ backgroundColor: "red" }}>
-                        <div className="col-md-12">
-                            <br />
-                            <br />
-                            <p>Clicky Game</p>
-                        </div>
-                    </div>
+                    <Footer />
                 </div>
             </div>
         )

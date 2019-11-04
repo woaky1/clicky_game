@@ -1,18 +1,9 @@
 import React from 'react';
 import Gamepic from './Gamepic';
-// import pokedex from '../pokedex.json';
-
-// Shuffling my pictures with a Fisher-Yates algorithm I learned here: https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb
-// for(let i = pokedex.length - 1; i > 0; i--){
-//     const j = Math.floor(Math.random() * i)
-//     const temp = pokedex[i]
-//     pokedex[i] = pokedex[j]
-//     pokedex[j] = temp
-//   }
 
 function Gameboard(props) {
     return (
-        <div>
+        <div className="justify-content-center">
             <div className="row">
                     <Gamepic name={props.pokedex[0].name} img={props.pokedex[0].img} pokeClick={props.pokeClick}/>
                     <Gamepic name={props.pokedex[1].name} img={props.pokedex[1].img} pokeClick={props.pokeClick}/>
