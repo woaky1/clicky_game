@@ -1,6 +1,7 @@
 import React from 'react';
 import Gamepic from './Gamepic';
 
+// This component lays out the main gameboard and passes the pokemon info to the Gamepic component so it can create the pictures.
 function Gameboard(props) {
     return (
         <div className="justify-content-center">

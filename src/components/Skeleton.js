@@ -5,9 +5,10 @@ import Gameboard from './Gameboard';
 import pokedex from '../pokedex.json';
 import Footer from './Footer';
 
-
+// Skeleton is the core of this app. It sets out the general structure of the page and holds the core logic of the game. By having that logic hear, necessary information can be pass to and between the children components.
 class Skeleton extends React.Component {
 
+    // Here we establish some key variables within the state of this component so that can be updated and passed to different children components
     state = {
         score: 0,
         topScore: 0,
@@ -15,6 +16,7 @@ class Skeleton extends React.Component {
         pokedex: pokedex
     };
 
+    // This is the logic that drives the game. If the pokemon has been clicken in the past, the score resets. Otherwise, the user gains a point and we check to see if there's a new high score.
     pokeClick = event => {
         if (this.state.guessedPokemon.includes(event.target.alt)) {
             this.setState({
@@ -35,6 +37,7 @@ class Skeleton extends React.Component {
         };
     }
 
+    // This function shuffles the data within the pokedex array so that the pokemon appear in a random order.
     shuffle = () => {
         // Shuffling my pictures with a Fisher-Yates algorithm I learned here: https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb
         for (let i = pokedex.length - 1; i > 0; i--) {
@@ -45,6 +48,7 @@ class Skeleton extends React.Component {
         }
     }
 
+    // Here we set out the general layout of the page and pass needed info to children compents via props.
     render() {
         this.shuffle();
         return (

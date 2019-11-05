@@ -1,5 +1,6 @@
 import React from 'react';
 
+// This component creates the Pokemon images seen on the gameboard.
 function Gamepic(props) {
     return (
         <div className="col-md-3">
