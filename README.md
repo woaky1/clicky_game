@@ -5,10 +5,9 @@ A memory game created as an exercise to learn React.
 This app's structure is entirely front end and follows the basic organization the "create-react-app" produces.
 ## **Public:** 
 These include the index file that is directly displayed by the browser and the robots.txt file, which determines which files web robots can access.
-
 ## **Source:** 
 These are the React files that drive the experience. They include: 
-index.js: This is where React is actually rendering the page.
+* index.js: This is where React is actually rendering the page.
 * Skeleton.js: This component provides the general structure of the page and holds global functions and variables the app needs.
 * Navbar.js: This contains the header bar seen at the top of the page.
 * Jumbo.js: This contains a bootstrap jumbotron containing the apps title and instructions.
@@ -23,10 +22,10 @@ index.js: This is where React is actually rendering the page.
 <img src="images/mainScreen.png" alt="Clicky game main screen"/>
 
 
-3. If this is your first time clicking on that Pok&#233;mon, you earn a point and the gameboard shuffles the Pok&#233;mon images. The game will also keep track of your highest score.
+3. If this is your first time clicking on that Pok&#233;mon, you earn a point and the gameboard shuffles the Pok&#233;mon images. The game keeps track of your highest score.
 <img src="images/pointScored.png" alt="Main screen after point is scored"/>
 
-4. Be careful, though. If you click on a Pok&#233;mon you've already clicked on, your score goes back to zero and the game starts over.
+4. Be careful, though. If you click on a Pok&#233;mon you've already clicked on, your score goes back to zero, the gameboard shuffles, and the game starts over.
 
 # Technology used
 This app was built primarily with Node and React. Bootstrap was used to help with page layout. The gh-pages node module was used to help to deploy the app to Github pages.
