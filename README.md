@@ -19,10 +19,12 @@ These are the React files that drive the experience. They include:
 # How to use the app
 1. Go to https://woaky1.github.io/clicky_game/.
 2. Click on a picture of a Pok&#233;mon.
+
 <img src="images/mainScreen.png" alt="Clicky game main screen"/>
 
 
 3. If this is your first time clicking on that Pok&#233;mon, you earn a point and the gameboard shuffles the Pok&#233;mon images. The game keeps track of your highest score.
+
 <img src="images/pointScored.png" alt="Main screen after point is scored"/>
 
 4. Be careful, though. If you click on a Pok&#233;mon you've already clicked on, your score goes back to zero, the gameboard shuffles, and the game starts over.
