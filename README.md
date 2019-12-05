@@ -1,11 +1,15 @@
 # clicky-game
-A memory game created for homework at Northwestern's Coding Boot Camp to help learn React.
+A memory game created as an exercise to learn React.
 
 # App Organization
 This app's structure is entirely front end and follows the basic organization the "create-react-app" produces.
-1.  Public: These include the index file that is directly displayed by the browser and several other minor files used by search engines or particular platforms.
+## **Public:** 
+These include the index file that is directly displayed by the browser and the robots.txt file, which determines which files web robots can access.
 
-2. Source: These are the React files that drive the experience, made up of index.js, App.js, and various components used to create the different parts of the page.
+## **Source:** 
+These are the React files that drive the experience. They include: 
+index.js: This is where React is actually rendering the page.
+ App.js, and various components used to create the different parts of the page.
 
 # How to use the app
 1. Go to https://woaky1.github.io/clicky_game/.
